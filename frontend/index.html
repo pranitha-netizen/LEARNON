@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5f0"><title>LearnOn — Adaptive Learning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="toast" class="toast" role="status"></div>
+  <section id="auth-screen" class="auth-shell">
+    <div class="auth-art"><div class="brand brand-light"><span class="brand-mark">L</span> learnon</div><div class="art-copy"><span class="eyebrow">LEARN AT YOUR OWN PACE</span><h1>Your next big<br>idea starts here.</h1><p>A learning space that adapts to you. Build skills, track your progress, and discover what to learn next.</p><div class="art-stats"><div><strong>01</strong><span>Learn</span></div><div><strong>02</strong><span>Practice</span></div><div><strong>03</strong><span>Grow</span></div></div></div><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-decoration">✳</div></div>
+    <div class="auth-panel"><div class="auth-inner"><div class="mobile-brand brand"><span class="brand-mark">L</span> learnon</div><span class="eyebrow muted">YOUR LEARNING JOURNEY</span><h2 id="auth-title">Welcome back</h2><p id="auth-subtitle" class="muted">Sign in to pick up where you left off.</p>
+      <div class="auth-tabs"><button class="tab active" id="login-tab">Sign in</button><button class="tab" id="register-tab">Create account</button></div>
+      <form id="auth-form"><div id="name-wrap" class="field hidden"><label for="auth-name">Full name</label><input id="auth-name" autocomplete="name" placeholder="Your name"></div><div class="field"><label for="auth-email">Email address</label><input id="auth-email" type="email" required autocomplete="email" placeholder="you@example.com"></div><div class="field"><label for="auth-password">Password</label><input id="auth-password" type="password" required autocomplete="current-password" placeholder="At least 8 characters"></div><button class="btn btn-primary full" type="submit" id="auth-submit">Sign in <span>↗</span></button></form>
+      <div class="demo-box"><span class="demo-icon">✦</span><div><strong>Just exploring?</strong><p>Demo: <b>demo@learnon.com</b><br>Password: <b>LearnOn@123</b></p></div><button id="fill-demo" class="text-button">Use demo</button></div><p class="auth-foot">By continuing, you agree to use this academic demo responsibly.</p>
+    </div></div>
+  </section>
+
+  <div id="app-shell" class="app-shell hidden">
+    <aside class="sidebar"><a class="brand" href="#"><span class="brand-mark">L</span> learnon</a><div class="side-label">WORKSPACE</div><nav class="side-nav"><button class="nav-item active" data-page="dashboard"><span>▦</span> Overview</button><button class="nav-item" data-page="courses"><span>◫</span> Explore courses</button><button class="nav-item" data-page="recommendations"><span>✳</span> For you <i id="rec-dot"></i></button><button class="nav-item" data-page="reports"><span>⌁</span> Course insights</button></nav><div class="sidebar-bottom"><div class="help-card"><div class="help-spark">✳</div><strong>Small steps add up.</strong><p>Keep your learning streak going with one lesson today.</p><button id="browse-from-help" class="text-button">Find a lesson ↗</button></div><div class="profile-mini"><div class="avatar" id="side-avatar">D</div><div class="profile-text"><strong id="side-name">Demo Learner</strong><span>Learner account</span></div><button id="logout-btn" title="Sign out" class="icon-button">↗</button></div></div></aside>
+    <main class="main-area"><header class="topbar"><div class="breadcrumbs"><span>Workspace</span><span class="crumb-slash">/</span><strong id="page-crumb">Overview</strong></div><div class="top-actions"><span class="today-label" id="today-label"></span><button class="avatar top-avatar" id="top-avatar" title="Your profile">D</button></div></header><div class="page-content" id="page-content"><div class="loading-state">Preparing your learning space…</div></div><footer class="footer"><span>LEARNON · ONLINE LEARNING PLATFORM</span><span>Learn a little. Grow a lot. <b>✳</b></span></footer></main>
+  </div>
+
+  <div id="modal-backdrop" class="modal-backdrop hidden"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-head"><div><span class="eyebrow muted" id="modal-eyebrow">YOUR LEARNING SPACE</span><h2 id="modal-title">Lesson</h2></div><button class="icon-button close-modal" id="close-modal" aria-label="Close">✕</button></div><div id="modal-body"></div></section></div>
+  <script src="app.js"></script>
+</body></html>
